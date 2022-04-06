@@ -1,4 +1,5 @@
-from random import Random
+from random import randint, random
+
 
 
 def primary():
@@ -8,7 +9,8 @@ def primary():
   quotes = f.readlines()
   f.close()
 
-  print(quotes[0])
-
+  print(quotes[randint(0,len(quotes)-1)])
+  
 if __name__== "__main__":
   primary()
+
